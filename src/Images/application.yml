@@ -1,0 +1,119 @@
+spring:
+
+  application:
+
+    name: api-gateway
+
+  cloud:
+
+    gateway:
+
+      globalcors:
+
+        cors-configurations:
+
+          '[/**]':
+
+            allowedOrigins: "*"
+
+            allowedHeaders:
+
+                - content-type
+
+            allowed-methods:
+
+              - GET
+
+              - POST
+
+              - PUT
+
+              - DELETE
+
+ 
+
+# User Service routing configuration
+
+      routes:
+
+        - id:USER-SERVICE
+
+          uri: lb://USER-SERVICE
+
+          predicates:
+
+            - Path=/user/**
+
+ 
+
+# Movie Service routing configuration
+
+        - id:PRODUCT-SERVICE
+
+          uri: lb://PRODUCT-SERVICE
+
+          predicates:
+
+            - Path=/products/**
+
+           
+
+# Rating Service routing configuration
+
+        - id:CATEGORY-SERVICE
+
+          uri: lb://CATEGORY-SERVICE
+
+          predicates:
+
+            - Path=/categories/**
+
+# Rating Service routing configuration
+
+        - id:CART-SERVICE
+
+          uri: lb://CART-SERVICE
+
+          predicates:
+
+            - Path=/cart/**
+
+ 
+# Rating Service routing configuration
+
+        - id:ORDER-SERVICE
+
+          uri: lb://ORDER-SERVICE
+
+          predicates:
+
+            - Path=/orders/**
+             
+
+             
+
+             
+
+server:
+
+  port: 9000
+
+ 
+
+ 
+
+eureka:
+
+  instance:
+
+    prefer-ip-address: true
+
+  client:
+
+    fetch-registry: true
+
+    register-with-eureka: true
+
+    service-url:
+
+      defaultZone: http://localhost:8761/eureka

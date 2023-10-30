@@ -1,0 +1,39 @@
+.aboutcontainer{
+    align-items: center;
+    display: flex;
+    margin: 2% 5%;
+}
+
+.aboutcontainer .imagecontainer img{
+    margin:2%;
+    margin-left: 20%;
+    height:55vh;
+    width:65%;
+    object-fit: cover;
+}
+.aboutcontainer .aboutustext{
+    margin: 1% 4%;
+    width:55%;
+    text-align: justify;
+}
+.aboutusheader{
+    align-items: center;
+    text-align: center;
+    margin: 2% 5%;
+    color:var(--col1)
+
+}
+
+
+@media (max-width: 650px)
+{
+    .aboutcontainer{
+        align-items: center;
+        display:contents;
+        margin: 2% 5%;
+    }
+    .aboutcontainer .aboutustext{
+        margin: 1% 10%;
+        width:85%;
+    }
+}

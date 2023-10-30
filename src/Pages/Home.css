@@ -1,0 +1,102 @@
+.bestProducts .top {
+  text-align: center;
+  align-items: center;
+}
+.productslider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.productslider .container1 {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.productslider .container1 img {
+  width: 91%;
+  height: 36vh;
+  margin-top: 4%;
+  object-fit: cover;
+}
+
+.subfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: rgb(240, 240, 240);
+  margin-top: 5%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.subfooter .left {
+  width: 40%;
+  margin: auto;
+}
+
+.subfooter .right {
+  width: 45%;
+}
+.subfooter .left img {
+  width: 100%;
+  min-width: 150px;
+  height: 35vh;
+  object-fit: cover;
+}
+.subfooter .right h1 {
+  width: 70%;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.subfooter .right p {
+  width: 80%;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+@media (max-width: 650px) {
+  .subfooter {
+    overflow: hidden;
+    display: inline-block;
+    margin: 2% 0;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(240, 240, 240);
+
+    height: auto;
+    overflow: hidden;
+  }
+
+  .subfooter .right h1 {
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+  }
+  .subfooter .right p {
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .subfooter .right {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+  }
+}

@@ -1,0 +1,204 @@
+.singleProduct .pc1{
+ padding-top: 5%;
+ display: flex;
+ justify-content: center;
+ position:relative;
+}
+.singleProduct .pc1 .c11{
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+.singleProduct .pc1 .c11 .imgset{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+   
+
+}
+
+.singleProduct .pc1 .c11 .imgset img{
+    width: 50%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    margin-top:5px;
+}
+.singleProduct .pc1 .c11 .imgset .active{
+    border: 5px solid var(--col1);
+    width: 95%;
+
+}
+.singleProduct .pc1 .c11 .imgbig {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+}
+
+.singleProduct .pc1 .c12 {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+.singleProduct .pc1 .c12 h1{
+    font-size: 2rem;
+}
+
+
+.singleProduct .pc1 .c12 .c121 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.singleProduct .pc1 .c12 .price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--col1);
+    display: flex;
+    align-items: center;
+}
+.singleProduct .pc1 .c12 .incrdecr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 150px;
+    border: 1px solid var(--col1);
+    border-radius: 5px;
+}
+.singleProduct .pc1 .c12 .incrdecr button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--col1);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.singleProduct .pc1 .c12 .incrdecr p {
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.singleProduct .btncont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10px;
+}
+.singleProduct .btncont button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: var(--col1);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.singleProduct .btncont button:hover {
+    background-color: black;
+}
+
+.back{
+    background-color: var(--col1);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 10px 0px;
+    display: flex;
+    position:absolute;
+top: 10px;
+left: 10px;
+min-width: 100px;
+}
+
+.back svg{
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+.singleProduct .pc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.singleProduct .pc2 h2{
+    color: var(--col2);
+    cursor: pointer;
+    margin: 3% 0px;
+}
+.singleProduct .pc2 .description{
+    width:70%;
+    max-width: 900px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .singleProduct .pc1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .singleProduct .pc1 .c11 {
+        width: 80%;
+        /* background-color: aqua; */
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .singleProduct .pc1 .c11 .imgset {
+        max-width: 300px;
+        width: 100%;
+        margin: 10px 5px;
+        /* background-color: aqua; */
+        flex-direction: row;
+    }
+    .singleProduct .pc1 .c12 {
+        width: 80%;
+    }
+    .singleProduct .pc1 .back{
+        flex-direction: row;
+       display: flex;
+    }
+
+    .singleProduct .pc2 .description{
+        width: 90%;
+        max-width: 900px;
+        align-self: center;
+         text-align: justify;
+        font-size: 13px;
+       
+      
+    }
+   
+    .singleProduct .pc1 .c11 .imgbig {
+        width: 60%;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: 1/1;
+    }
+    @media only screen and (max-width: 450px) {
+        .back{
+            position: relative;
+        }
+        .singleProduct .pc1 .c11 .imgbig {
+          margin-top: 10px;
+        }
+    }
+
+}

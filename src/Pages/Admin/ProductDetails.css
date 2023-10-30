@@ -1,0 +1,76 @@
+
+.listing{
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0px;
+    display: flex;
+    position:absolute;
+top: 10px;
+left: 20px;
+min-width: 100px;
+}
+.desc{
+    width:60%;
+    text-align: justify;
+    align-self: center;
+}
+.picdiv{
+    width:50%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.picdiv2{
+    margin:0px 2%;
+}
+@media screen and (max-width: 768px){
+    
+
+ 
+    
+    .card-body{
+        display: flex;
+        flex-direction: column;
+    }
+.listing{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  
+    min-width: 100px;
+}
+.desc{
+width: 90%;
+max-width: 900px;
+align-self: center;
+ text-align: justify;
+font-size: 13px;
+margin: 0;
+        }
+        .picdiv2{
+            margin:4%;
+        }}
+
+        @media screen and (max-width: 600px){
+
+            .middle{
+            
+               text-align: center;
+               align-self: center;
+              
+            }
+            .middle h5{
+                font-size: 1.1rem;
+                text-align: center;
+               
+            }
+            .picdiv{
+                width: 90%;
+                margin: auto;
+            }
+           
+        }

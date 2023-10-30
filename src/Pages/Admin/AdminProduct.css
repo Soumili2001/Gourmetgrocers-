@@ -1,0 +1,23 @@
+.probtn{
+    margin: 2px;
+   
+}
+.divbtn{
+    float: left;
+    margin: 1%;
+}
+
+@media screen and (max-width: 600px){
+    
+
+.divbtn{
+display: flex;
+position: relative;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+    }

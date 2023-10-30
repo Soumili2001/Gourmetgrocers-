@@ -1,0 +1,16 @@
+.products{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:0px 20px;
+    margin-top: 2%;
+   
+}
+
+@media (max-width: 650px) {
+    .products {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
